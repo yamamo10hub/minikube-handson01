@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  # Pod名 uniqであること
+  name: my-first-pod 
+  labels:
+    # ラベルという概念がある
+    component: nginx 
+spec:
+  containers:
+    # Pod内の識別で使用するコンテナ名
+  - name: nginx
+    # dockerimageファイル
+    image: nginx:latest
